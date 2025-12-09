@@ -7,12 +7,10 @@ public class BasketballAudio : MonoBehaviour
     public List<AudioClip> floorClips = new List<AudioClip>();
     public List<AudioClip> brickClips = new List<AudioClip>();
     public List<AudioClip> swishClips = new List<AudioClip>();
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start() { }
-
-    // Update is called once per frame
-    void Update() { }
+    public List<AudioClip> scoreClips = new List<AudioClip>();
+    public AudioClip crowd;
+    public AudioClip cheer;
+    public AudioClip boo;
 
     private void OnCollisionEnter(Collision other)
     {
@@ -30,6 +28,8 @@ public class BasketballAudio : MonoBehaviour
         else if (other.gameObject.tag == "Net")
             // https://freesound.org/people/akennedybrewer/sounds/389170/
             audioSource.clip = GetRandomClip(swishClips);
+        else if (other.gameObject.tag == "Score")
+            audioSource.clip = cheer;
 
         if (audioSource.clip != null)
             audioSource.Play();

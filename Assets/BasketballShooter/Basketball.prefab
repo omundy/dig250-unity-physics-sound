@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 2207785851137966446}
   m_Layer: 6
   m_Name: Basketball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67,6 +67,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -88,6 +90,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -99,10 +102,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6210276607145594948}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Mass: 1.26
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -186,6 +189,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2f4017e13bacb41f9b055dc30792c009, type: 3}
   swishClips:
   - {fileID: 8300000, guid: 27be56787cb0c4c8fb7c2a9d66160060, type: 3}
+  scoreClips: []
   crowd: {fileID: 0}
   cheer: {fileID: 0}
   boo: {fileID: 0}

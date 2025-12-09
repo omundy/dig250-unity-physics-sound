@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "unity-physics-sound.sln"
+    "dotnet.defaultSolution": "unity-physics-sound.slnx"
 }
